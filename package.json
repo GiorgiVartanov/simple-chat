@@ -1,0 +1,17 @@
+{
+  "name": "pr1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server & nodemon index.js",
+    "client": "cd client & npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
